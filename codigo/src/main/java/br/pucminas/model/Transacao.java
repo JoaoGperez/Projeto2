@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Transacao {
     private LocalDate data;
     private String descricao;
