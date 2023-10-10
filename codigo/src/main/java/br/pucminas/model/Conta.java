@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Conta {
+abstract class Conta {
     class ContaPoupanca implements Conta {
         // Attributes
         private double saldo;
