@@ -1,3 +1,5 @@
+package main.java.br.pucminas.model;
+
 public class ContaCorrente extends Conta {
     // Attributes
     private double limiteSaqueEspecial = 200.00;
@@ -16,6 +18,8 @@ public class ContaCorrente extends Conta {
     }
 
     private void calcularTaxaMensal() {
+        int valor;
+        double saldo;
         if (valor <= saldo + limiteSaqueEspecial) {
             saldo -= taxaMensal;
             registrarTransacao("TM ", taxaMensal);

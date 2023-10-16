@@ -1,3 +1,5 @@
+package main.java.br.pucminas.model;
+
 public class ContaPoupanca extends Conta {
     // Attributes
     private double rendimentoFixo = 0.005;

@@ -1,3 +1,5 @@
+package main.java.br.pucminas.model;
+
 public class ContaRendaFixa extends Conta {
     // Attributes
     private double rendimentoContratado;

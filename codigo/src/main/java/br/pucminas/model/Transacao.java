@@ -1,3 +1,5 @@
+package main.java.br.pucminas.model;
+
 import java.time.LocalDate;
 
 public class Transacao {

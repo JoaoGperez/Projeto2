@@ -1,5 +1,8 @@
 package main.java.br.pucminas.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cliente {
 
     private String cpf;
@@ -17,7 +20,7 @@ public class Cliente {
     }
 
     public String setCpf(String cpf) {
-        this.cpf = cpf;
+        return this.cpf = cpf;
     }
 
     public String getNome() {
@@ -33,14 +36,19 @@ public class Cliente {
     public void setSenha(String senha){
         this.senha = senha;
     }
+
+      private List<Conta> contas = new ArrayList<>(); // List to store the client's accounts
+
+
+    public List<Conta> getContas() {
+        return contas;
+    }
+
+    // Method to add a Conta to the list of the client's accounts
+    public void adicionarConta(Conta conta) {
+        contas.add(conta);
+    }
 }
 
 
 
-    /*public List<Cliente> getClientesPassados(){
-        return clientesPassados;
-    }
-    public void setClientesPassados(List<Cliente> clientesPassados){
-        this.clientesPassados = clientesPassados;
-    }
-}*/

@@ -1,3 +1,5 @@
+package main.java.br.pucminas.model;
+
 public class ContaInvestimento extends Conta {
     // Attributes
     private double rendimentoDiario;

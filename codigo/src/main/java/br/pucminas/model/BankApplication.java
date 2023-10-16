@@ -1,3 +1,6 @@
+package main.java.br.pucminas.model;
+
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,15 +78,55 @@ public class BankApplication {
         return null; // Altere para retornar o cliente correto
     }
 
-    public static void main(String[] args) {
-        // Crie uma instância de BankApplication e execute as operações desejadas
-        BankApplication bankApp = new BankApplication();
-        
-        // Exemplo de uso:
-        Cliente joao = bankApp.clientes.get(0);
-        Conta contaJoao = joao.getContas().get(0);
+public static void main(String[] args) {
+  // BankApplication bankApp = new BankApplication();
 
-        double saldo = bankApp.consultarSaldo(joao, contaJoao);
-        System.out.println("Saldo de João: " + saldo);
-    }
+  // // Recupere os clientes e contas criados
+  // Cliente joao = bankApp.clientes.get(0);
+  // Conta contaJoao = joao.getContas().get(0);
+
+  // Cliente maria = bankApp.clientes.get(1);
+  // Conta contaMaria = maria.getContas().get(0);
+
+  // // Consultar saldo
+  // double saldoJoao = bankApp.consultarSaldo(joao, contaJoao);
+  // double saldoMaria = bankApp.consultarSaldo(maria, contaMaria);
+
+  // System.out.println("Saldo de João: " + saldoJoao);
+  // System.out.println("Saldo de Maria: " + saldoMaria);
+
+  // // Realizar um depósito
+  // double valorDeposito = 100.0;
+  // String resultadoDeposito = bankApp.deposito(joao, contaJoao, valorDeposito);
+
+  // System.out.println(resultadoDeposito);
+
+  // // Consultar saldo novamente após o depósito
+  // saldoJoao = bankApp.consultarSaldo(joao, contaJoao);
+  // System.out.println("Novo saldo de João: " + saldoJoao);
+
+  // // Realizar um saque
+  // double valorSaque = 50.0;
+  // String resultadoSaque = bankApp.saque(joao, contaJoao, valorSaque);
+
+  // System.out.println(resultadoSaque);
+
+  // // Consultar saldo novamente após o saque
+  // saldoJoao = bankApp.consultarSaldo(joao, contaJoao);
+  // System.out.println("Novo saldo de João: " + saldoJoao);
+
+  // // Realizar uma transferência para Maria
+  // double valorTransferencia = 30.0;
+  // String resultadoTransferencia = bankApp.transferencia(joao, contaJoao, maria, contaMaria, valorTransferencia);
+
+  // System.out.println(resultadoTransferencia);
+
+  // // Consultar saldo de João e Maria após a transferência
+  // saldoJoao = bankApp.consultarSaldo(joao, contaJoao);
+  // saldoMaria = bankApp.consultarSaldo(maria, contaMaria);
+
+  // System.out.println("Novo saldo de João: " + saldoJoao);
+  // System.out.println("Novo saldo de Maria: " + saldoMaria);
+}
+
 }
