@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.time.LocalDate;
 
-abstract class Conta {
+publicabstract class Conta {
     private double saldo;
     private List<Transacao> transacoes = new ArrayList<>();
 
@@ -36,19 +36,19 @@ abstract class Conta {
         return "Depósito efetuado com sucesso.";
     }
 
- public boolean saque(double valor) {
+ public String saque(double valor) {
     if (valor <= saldo) {
         saldo -= valor;
         registrarTransacao("S ", -valor);
-        return true;  // Withdrawal was successful
+        return "Saque efetuado com sucesso.";
     } else {
-        return false;  // Withdrawal failed due to insufficient balance
+        return "Não há saldo suficiente.";
     }
 }
 
 
     public String transferencia(Conta destino, double valor) {
-        if (saque(valor)) {
+        if (saque(valor).equals("Saque efetuado com sucesso.")) {
             destino.deposito(valor);
             registrarTransacao("T ", -valor);
             return "Transferência efetuada com sucesso.";
